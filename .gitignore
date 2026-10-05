@@ -85,10 +85,11 @@ Thumbs.db
 # ===================== AgentScope =====================
 .agentscope/
 
-# ===================== 毕设文档（项目组内部材料，不上传）=====================
+# ===================== 项目文档（项目组内部材料，不上传）=====================
 基于LangGraph与Web地图MCP服务的旅行规划智能体设计.docx
 基于LangGraph与Web地图MCP服务的旅行规划智能体设计.pdf
 开题报告.docx
 汇报答辩.pptx
 论文翻译.pdf
 阶段性报告.docx
+Plan-and-Solve Prompting Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models.pdf
