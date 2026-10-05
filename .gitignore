@@ -1,0 +1,86 @@
+# ===================== Python =====================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ===================== 密钥与敏感配置（严禁提交）=====================
+# config.py 硬编码了豆包 LLM API Key 与高德 API Key，改为 config.example.py 后提交模板
+config.py
+config.local.py
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+*.secret
+secrets/
+
+# ===================== 运行时数据 / 持久化 =====================
+# 含 LangGraph checkpointer 数据库与用户长期记忆（隐私）
+data/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# ===================== 模型与向量库 =====================
+data/models/
+*.safetensors
+*.pth
+*.onnx
+*.bin
+*.pickle
+*.joblib
+
+# ===================== 前端 =====================
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/build/
+
+# ===================== 日志 =====================
+*.log
+logs/
+
+# ===================== 调试脚本（test2 为一次性联调脚本）=====================
+test2/
+.tmp_pseudo_format/
+
+# ===================== IDE / OS =====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ===================== Claude 内部配置与数据 =====================
+# 保留 .claude/skills/*/SKILL.md 与 script/*.py（RAG 核心代码），排除个人配置与向量库数据
+.claude/settings.local.json
+.claude/claudian-settings.json
+.claude/worktrees/
+.claude/skills/*/data/
+
+# ===================== AgentScope =====================
+.agentscope/
